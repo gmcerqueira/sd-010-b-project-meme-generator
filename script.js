@@ -1,6 +1,8 @@
 //              elements
 const inputText = document.querySelector('#text-input');
-const containerImage = document.querySelector('#meme-image-container');
+const inputImage = document.querySelector('#meme-insert');
+const containerText = document.querySelector('#meme-text');
+const containerImg = document.querySelector('#meme-image');
 
 //             listeners
 
@@ -8,7 +10,15 @@ const containerImage = document.querySelector('#meme-image-container');
 
 const setInputText = () => {
   inputText.addEventListener('keyup', () => {
-    containerImage.textContent = inputText.value;
+    containerText.textContent = inputText.value;
+  });
+};
+
+// inputImage Load listener
+
+const setInputImage = () => {
+  inputImage.addEventListener('change', (e) => {
+    containerImg.src = URL.createObjectURL(e.target.files[0]);
   });
 };
 
@@ -16,6 +26,7 @@ const setInputText = () => {
 
 const loadButtons = () => {
   setInputText();
+  setInputImage();
 };
 
 window.onload = () => {
