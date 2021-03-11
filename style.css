@@ -22,14 +22,29 @@
   text-shadow: 5px 5px 5px black;
 }
 
+#div-button {
+  width: 511px;
+  text-align: center;
+  padding: 20px;
+}
+
 #fire {
-  border: 3px dashed red;
+  background-color: red;
+  width: 60px;
+  height: 30px;
+  color: white;
 }
 
 #water {
-  border: blue 5px double;
+  background-color: blue;
+  width: 60px;
+  height: 30px;
+  color: white;
 }
 
 #earth {
-  border: groove green 6px;
+  background-color: green;
+  width: 60px;
+  height: 30px;
+  color: white;
 }

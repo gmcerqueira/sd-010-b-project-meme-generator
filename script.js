@@ -18,13 +18,16 @@ const container = document.querySelector('#meme-image-container');
 
 const btnFire = document.querySelector('#fire');
 btnFire.addEventListener('click', () => {
+  container.style.border = '';
   container.style.border = '3px dashed red';
 });
 const btnWater = document.querySelector('#water');
 btnWater.addEventListener('click', () => {
+  container.style.border = '';
   container.style.border = '5px double blue';
 });
 const btnEarth = document.querySelector('#earth');
 btnEarth.addEventListener('click', () => {
+  container.style.border = '';
   container.style.border = '6px groove green';
 });
