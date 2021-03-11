@@ -1,0 +1,19 @@
+p {
+    position: absolute;
+    z-index: 1;
+    top: 280px;
+    left: 200px
+}
+
+img {
+  position: absolute;
+  z-index: 0;
+  width: 400px;
+}
+input {
+  display: block;
+}
+
+div {
+  padding: 20px;
+}
