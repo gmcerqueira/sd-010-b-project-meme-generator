@@ -1,0 +1,19 @@
+h1 , #inputs {
+  margin: auto;
+  text-align: center;
+}
+
+input {
+  margin-top: 20px;
+  display: inline-block;
+}
+
+#canvas {
+  margin: auto;
+  margin-top: 30px;
+  display: block;
+}
+
+#background {
+  display: none;
+}

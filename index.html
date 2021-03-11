@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Meme Generator</title>
+</head>
+<body>
+  <h1 id="title">Meme Generator</h1>
+  <div id="inputs">
+    <label>Texto: </label>
+    <input type="text" id="text-input">
+    <button id="insert-text">Inserir Texto</button>
+    <br>
+    <input type="file" id="upload-image">
+  </div>
+  <div id="meme-image-container">
+    <canvas id="canvas" width="400" height="400">
+      Canvas requires a browser that supports HTML5.
+    </canvas>
+    </div>
+  <img id="background" src="http://res.cloudinary.com/dlwnmz6lr/image/upload/v1520011253/170203-salt-bae-mn-1530_060e5898cdcf7b58f97126d3cfbfdf71.nbcnews-ux-2880-1000_kllh1d.jpg"/>
+  <script src="script.js"></script>
+</body>
+</html>
