@@ -1,6 +1,14 @@
 #meme-text {
-  top: 280px;
+  top: 400px;
+  word-wrap: break-word;
   position: fixed;
+  text-shadow: 5px 5px 5px black;
+  font-size: 30px;
+  color: white;
+  padding: 0 20px;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 #meme-image-container {
