@@ -9,11 +9,23 @@ input {
 }
 
 #canvas {
+  border: 1px solid red;
+  position: relative;
   margin: auto;
   margin-top: 30px;
   display: block;
+  z-index: -1;
 }
 
 #background {
   display: none;
+}
+
+.memeText {
+  position: absolute;
+  top: 450px;
+  width: 100%;
+  text-align: center;
+  font-size: 18px;
+  z-index: 1;
 }
