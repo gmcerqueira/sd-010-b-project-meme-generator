@@ -1,3 +1,5 @@
+const image = document.querySelector('#meme-image');
+
 function showText() {
   const textInput = document.querySelector('#text-input');
   const containerText = document.querySelector('#meme-text');
@@ -10,7 +12,6 @@ textInput.addEventListener('keyup', showText);
 
 const memeInsert = document.querySelector('#meme-insert');
 memeInsert.addEventListener('change', () => {
-  const image = document.querySelector('#meme-image');
   image.src = URL.createObjectURL(memeInsert.files[0]);
 });
 
@@ -34,23 +35,19 @@ btnEarth.addEventListener('click', () => {
 
 const imageOne = document.querySelector('#meme-1');
 imageOne.addEventListener('click', () => {
-  const image = document.querySelector('#meme-image');
   image.src = imageOne.src;
 });
 
 const imageTwo = document.querySelector('#meme-2');
 imageTwo.addEventListener('click', () => {
-  const image = document.querySelector('#meme-image');
   image.src = imageTwo.src;
 });
 
 const imageThree = document.querySelector('#meme-3');
 imageThree.addEventListener('click', () => {
-  const image = document.querySelector('#meme-image');
   image.src = imageThree.src;
 });
 const imageFour = document.querySelector('#meme-4');
 imageFour.addEventListener('click', () => {
-  const image = document.querySelector('#meme-image');
   image.src = imageFour.src;
 });
