@@ -15,4 +15,6 @@
   width: 500px;
 }
 
-#meme-text {}
+#meme-text {
+  position: absolute;
+}
