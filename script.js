@@ -18,16 +18,20 @@ function requisito1() {
 
 function requisito2() {
   const input = document.createElement('input');
+  //input fica apto a receber imagens
   input.id = 'meme-insert';
   document.getElementById('text-input').insertAdjacentElement('afterend', input);
   input.type = 'file';
   input.setAttribute('accept', 'image');
+  //cria o elemento img antes da div do texto
+  const img = document.createElement('img');
+  document.querySelector('#meme-text').insertAdjacentElement('beforebegin', img);
+  //imagem recebe o src do input
   input.addEventListener('change', function () {
-    const img = document.createElement('img');
-    document.querySelector('#meme-image-container').appendChild(img);
     img.src = (URL.createObjectURL(document.getElementById('meme-insert').files[0]));
   });
 }
+
 window.onload = function carregamento() {
   requisito1();
   requisito2();
