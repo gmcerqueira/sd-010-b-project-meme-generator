@@ -10,14 +10,18 @@
   display: flex;
   justify-content: center;
   align-items: flex-end;
-  border: 3px solid black;
+  background-color: white;
+  border: 1px solid black;
 }
 
 #meme-image-container p {
   z-index: 1;
+  color: white;
+  font-size: 30px;
+  text-shadow: 5px 5px 5px black;
 }
 
-img {
+#meme-image-container img {
   position: absolute;
   width: 100%;
   height: 100%;
