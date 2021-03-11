@@ -1,5 +1,7 @@
 #meme-text {
-  top: 400px;
+  height: 120px;
+  width: 460px;
+  top: 350px;
   word-wrap: break-word;
   position: fixed;
   text-shadow: 5px 5px 5px black;
