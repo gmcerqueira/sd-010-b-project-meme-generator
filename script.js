@@ -27,3 +27,32 @@ function imagemMeme() {
 }
 
 imagemMeme();
+
+const div = document.querySelector('#meme-image-container');
+
+function fogo(){
+    const botaoFogo = document.querySelector('#fire');
+    botaoFogo.addEventListener('click', function fire(){
+        div.style.border ='3px dashed red';
+    })
+}
+
+fogo();
+
+function agua(){
+    const botaoAgua = document.querySelector('#water');
+    botaoAgua.addEventListener('click', function agua(){
+        div.style.border ='5px double blue';
+    })
+}
+
+agua();
+
+function earth(){
+    const botaoTerra = document.querySelector('#earth');
+    botaoTerra.addEventListener('click', function earth(){
+        div.style.border ='6px groove green';
+    })
+}
+
+earth();

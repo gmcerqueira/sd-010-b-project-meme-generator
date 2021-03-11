@@ -32,3 +32,18 @@ p {
   word-wrap: break-word;
   text-shadow: 5px 5px 5px black;
 }
+
+#fire {
+    background-color: red;
+    border-radius: 20%;
+}
+
+#water {
+    background-color:rgb(89, 89, 248);
+    border-radius: 20%;
+}
+
+#earth {
+    background-color:green;
+    border-radius: 20%;
+}
