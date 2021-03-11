@@ -7,21 +7,27 @@ p {
   display: inline;
 }
 
-.container {
+#meme-image-container {
     border: 1px solid rgb(0, 0, 0);
     background-color: rgb(255, 255, 255);
     margin: 20px;
-    width: 250px;
-    height: 250px;
+    width: 600px;
+    height: 600px;
 }
 
 #meme-image {
-    width: 250px;
-    height: 250px;
-
+    width: 600px;
+    height: 600px;
+    position:absolute;
+    z-index: 0;
 }
 
 #meme-text {
     position: absolute;
-    float: left;
+    color: rgb(245, 3, 3);
+    font-size: 50px;
+    font-family:Arial, Helvetica, sans-serif;
+    width: 600px;
+    z-index: 1;
+    word-wrap:break-word;
 }
