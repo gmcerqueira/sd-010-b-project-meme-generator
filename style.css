@@ -22,9 +22,10 @@ body {
   margin: auto;
   display: flex;
   position: relative;
+  background-color: rgb(255, 255, 255);
 }
 
-#meme-image-container h1 {
+#meme-text {
   text-shadow: 5px 5px 5px black;
   font-size: 30px;
   color: white;
@@ -32,6 +33,11 @@ body {
   position: absolute;
   padding: 15px;
   top: 350px;
+}
+
+.famous-memes img {
+  width: 100%;
+  height: 100%;
 }
 
 #meme-image-container img {
@@ -61,11 +67,6 @@ body {
   height: 200px;
   border: 1px solid black;
   float: left;
-}
-
-.famous-memes img {
-  width: 100%;
-  height: 100%;
 }
 
 #fire {

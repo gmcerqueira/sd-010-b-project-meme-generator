@@ -7,6 +7,10 @@ const btnFire = document.querySelector('#fire');
 const btnWater = document.querySelector('#water');
 const btnEarth = document.querySelector('#earth');
 const imgContainer = document.querySelector('#meme-image-container');
+const imgMeme1 = document.querySelector('#meme-1');
+const imgMeme3 = document.querySelector('#meme-3');
+const imgMeme4 = document.querySelector('#meme-4');
+const imgMeme2 = document.querySelector('#meme-2');
 
 // loadFile based on https://stackoverflow.com/questions/4459379/preview-an-image-before-it-is-uploaded
 
@@ -44,4 +48,13 @@ btnEarth.addEventListener('click', () => {
   styleContainer(value);
 });
 
-loadFile();
+// Box memes
+
+const boxImages = (e) => {
+  memeImg.src = e.target.src;
+};
+
+imgMeme1.addEventListener('click', boxImages);
+imgMeme2.addEventListener('click', boxImages);
+imgMeme3.addEventListener('click', boxImages);
+imgMeme4.addEventListener('click', boxImages);
