@@ -7,7 +7,7 @@ const containerImage = document.querySelector('#meme-image-container');
 // set inputText listener
 
 const setInputText = () => {
-  inputText.addEventListener('keydown', () => {
+  inputText.addEventListener('keyup', () => {
     containerImage.textContent = inputText.value;
   });
 };
