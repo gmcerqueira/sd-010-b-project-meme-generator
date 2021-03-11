@@ -31,3 +31,26 @@ btnEarth.addEventListener('click', () => {
   container.style.border = '';
   container.style.border = '6px groove green';
 });
+
+const imageOne = document.querySelector('#meme-1');
+imageOne.addEventListener('click', () => {
+  const image = document.querySelector('#meme-image');
+  image.src = imageOne.src;
+});
+
+const imageTwo = document.querySelector('#meme-2');
+imageTwo.addEventListener('click', () => {
+  const image = document.querySelector('#meme-image');
+  image.src = imageTwo.src;
+});
+
+const imageThree = document.querySelector('#meme-3');
+imageThree.addEventListener('click', () => {
+  const image = document.querySelector('#meme-image');
+  image.src = imageThree.src;
+});
+const imageFour = document.querySelector('#meme-4');
+imageFour.addEventListener('click', () => {
+  const image = document.querySelector('#meme-image');
+  image.src = imageFour.src;
+});
