@@ -34,16 +34,20 @@ p {
 }
 
 #fire {
-    background-color: red;
-    border-radius: 20%;
+  background-color: red;
+  border-radius: 20%;
 }
 
 #water {
-    background-color:rgb(89, 89, 248);
-    border-radius: 20%;
+  background-color: blue;
+  border-radius: 20%;
 }
 
 #earth {
-    background-color:green;
-    border-radius: 20%;
+  background-color: green;
+  border-radius: 20%;
 }
+
+/* .memes {
+    color: rgb(0, 0, 255);
+} */
