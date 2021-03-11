@@ -6,7 +6,7 @@
 #meme-image-container {
   height: 500px;
   width: 500px;
-  border: 1px black solid;
+  border: black solid 1px;
   background-color: white;
 }
 
@@ -15,7 +15,4 @@
   width: 500px;
 }
 
-#meme-text {
-  position: absolute;
-
-}
+#meme-text {}
