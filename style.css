@@ -1,8 +1,8 @@
 p {
   position: absolute;
   z-index: 1;
-  top: 260px;
-  left: 170px;
+  bottom:10px;
+  left:20px;
   text-shadow: 5px 5px 5px;
   font-size: 30px;
   color: white;
@@ -11,7 +11,8 @@ p {
 img {
   position: absolute;
   z-index: 0;
-  width: 400px;
+  width: 500px;
+  margin: auto;
 }
 input {
   display: block;
@@ -21,6 +22,8 @@ div {
   padding: 20px;
   border: 1px solid black;
   background-color: white;
-  height: 230px;
-  width: 400px;
+  height: 300px;
+  width: 500px;
+  position: relative;
+
 }
