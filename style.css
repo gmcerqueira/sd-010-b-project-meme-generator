@@ -24,7 +24,7 @@ input {
   object-fit: cover;
   width: 400px;
   height: 400px;
-  z-index: 0;
+  z-index: 1;
 }
 
 #meme-text {
@@ -36,7 +36,7 @@ input {
   font-size: 30px;
   color: white;
   text-shadow: 5px 5px 5px black;
-  z-index: 1;
+  z-index: 2;
 }
 
 #buttons {
@@ -69,4 +69,22 @@ input {
   width: 60px;
   height: 20px;
   margin-left: 5px;
+}
+
+#memes {
+  position: relative;
+  margin: auto;
+  margin-top: 30px;
+  display: block;
+  height: 72px;
+  width: 350px;
+  z-index: 3;
+}
+
+#meme-1 , #meme-2 , #meme-3 , #meme-4 {
+  object-fit: cover;
+  margin-left: 10px;
+  height: 70px;
+  width: 70px;
+  z-index: 4;
 }

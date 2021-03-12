@@ -30,3 +30,12 @@ insertImage.onchange = function () {
   console.log(urlImage);
   image.src = urlImage;
 };
+
+document.getElementById('memes').addEventListener('click', (event) => {
+  const meme = event.target;
+  const image2 = document.getElementById('meme-image');
+  image2.src = meme.src;
+  console.log(meme);
+  console.log(image2);
+  console.log(meme);
+});
