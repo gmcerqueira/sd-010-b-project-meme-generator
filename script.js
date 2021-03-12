@@ -3,7 +3,7 @@ function insertText() {
   input.addEventListener('keyup', function () {
     const text = document.getElementById('meme-text');
     text.innerText = input.value;
-  })
+  });
 }
 
 insertText();
@@ -24,3 +24,49 @@ function insertImage() {
 }
 
 insertImage ();
+
+function fire() {
+  const btnFire = document.getElementById('fire');
+  btnFire.addEventListener('click', function () {
+    const div = document.getElementById('meme-image-container');
+    div.style.border = 'dashed red 3px';
+  })
+}
+const btnFire = document.getElementById('fire');
+btnFire.style.backgroundColor = 'red'
+fire();
+
+function water() {
+  const btnWater = document.getElementById('water');
+  btnWater.addEventListener('click', function () {
+    const div = document.getElementById('meme-image-container');
+    div.style.border = 'double blue 5px';
+  })
+}
+
+const btnWater = document.getElementById('water');
+btnWater.style.backgroundColor = 'blue'
+water();
+
+function earth() {
+  const btnEarth = document.getElementById('earth');
+  btnEarth.addEventListener('click', function () {
+    const div = document.getElementById('meme-image-container');
+    div.style.border = 'groove green 6px';
+  })
+}
+
+const btnEarth = document.getElementById('earth');
+btnEarth.style.backgroundColor = 'green'
+earth();
+
+function selectMeme () {
+  const div = document.getElementsByTagName('div')[1];
+  const container = document.getElementById('meme-image');
+  div.addEventListener('click', function (event) {
+    container.src = event.target.src
+  })
+}
+
+selectMeme ();
+
