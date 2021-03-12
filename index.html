@@ -16,12 +16,14 @@
     <main>
         <input id="text-input" type="text" placeholder="Digite uma frase para seu meme...." maxlength="60">
         <div id="meme-image-container">
-            <img id="img" src="">
+            <div id="meme-image">
+                <img id="img" src="">
+            </div>            
             <div class="meme-text">
-                <span id="meme-text"></span>
+                <div><span id="meme-text"></span></div>
             </div>            
         </div>
-        <div id="config-container">
+        <div id="meme-insert">
        	 	<button id="fake-button">Escolher arquivo</button>
          	<input type="file" id="files" onchange="document.getElementById('img').src = window.URL.createObjectURL(this.files[0])"> 
         </div>
