@@ -24,6 +24,5 @@ stylesBtn.addEventListener('click', (event) => {
 });
 
 preDefinedMemes.addEventListener('click', (event) => {
-  console.log( event.target.src);
   memeImg.src = event.target.src;
 });

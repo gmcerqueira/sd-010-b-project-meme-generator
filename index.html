@@ -9,19 +9,15 @@
     <script src="script.js" defer></script>
   </head>
   <body>
-    <section>
-      <input id="text-input" type="text" maxlength="60" />
-      <input
-        id="meme-insert"
-        type="file"
-        src=""
-        alt="Selecione uma imagem do seu computado"
-      />
+    <h1 id="title">Meme Generator</h1>
+    <section class="input">
+      <input id="text-input" type="text" maxlength="60" placeholder="Texto para o seu meme" />
+      <input id="meme-insert" accept="image/*" type="file" src="" alt="Selecione uma imagem do seu computado"/>
     </section>
 
     <section id="meme-image-container">
       <img id="meme-image" src="" alt="Meme selecionado" />
-      <p id="meme-text"></p>
+      <p id="meme-text">Seu texto aparecera aqui! Seja criativo ;)</p>
     </section>
 
     <section id="styles-buttons">
