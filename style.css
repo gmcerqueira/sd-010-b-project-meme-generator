@@ -25,3 +25,30 @@
   height: 500px;
   min-width: 500px;
 }
+
+
+
+#styles-buttons {
+  margin: 20px;
+}
+
+.button {
+  padding: 5px 15px;
+  font-size: 20px;
+  font-weight: 600;
+  color: white;
+  margin-right: 10px;
+  border: none;
+}
+
+#fire {
+  background-color: red;
+}
+
+#water {
+  background-color: blue;
+}
+
+#earth {
+  background-color: green;
+}
