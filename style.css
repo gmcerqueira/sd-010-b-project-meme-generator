@@ -31,10 +31,42 @@ input {
   position: absolute;
   top: 300px;
   width: 400px;
+  word-wrap: normal;
   text-align: center;
   font-size: 30px;
   color: white;
   text-shadow: 5px 5px 5px black;
-  word-wrap: normal;
   z-index: 1;
+}
+
+#buttons {
+  width: fit-content;
+  display: block;
+  margin: auto;
+  margin-top: 20px;
+  align-content: center;
+}
+
+#fire {
+  background-color: red;
+  border: none;
+  width: 60px;
+  height: 20px;
+  margin-left: 5px;
+}
+
+#water {
+  background-color: blue;
+  border: none;
+  width: 60px;
+  height: 20px;
+  margin-left: 5px;
+}
+
+#earth {
+  background-color: green;
+  border: none;
+  width: 60px;
+  height: 20px;
+  margin-left: 5px;
 }

@@ -1,3 +1,17 @@
+function changeBorder(color) {
+  const colorChosen = color;
+  const container = document.getElementById('meme-image-container');
+  if (colorChosen === 'red') {
+    container.style.border = '3px dashed red';
+  }
+  if (colorChosen === 'blue') {
+    container.style.border = '5px double blue';
+  }
+  if (colorChosen === 'green') {
+    container.style.border = '6px groove blue';
+  }
+}
+
 const paragraph = document.getElementById('meme-text');
 const text = document.getElementById('text-input');
 text.onkeyup = function() {
