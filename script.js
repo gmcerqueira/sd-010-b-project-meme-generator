@@ -8,7 +8,7 @@ function changeBorder(color) {
     container.style.border = '5px double blue';
   }
   if (colorChosen === 'green') {
-    container.style.border = '6px groove blue';
+    container.style.border = '6px groove green';
   }
 }
 
