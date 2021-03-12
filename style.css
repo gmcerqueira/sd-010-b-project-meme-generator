@@ -17,22 +17,21 @@ body {
 
 #meme-image-container {
   border: solid 1px black;
-  width: 500px;
-  height: 500px;
+  width: 400px;
+  height: 400px;
   margin: auto;
   display: flex;
+  justify-content: center;
   position: relative;
-  background-color: rgb(255, 255, 255);
+  background-color: white;
+  align-items: flex-end;
 }
 
 #meme-text {
   text-shadow: 5px 5px 5px black;
   font-size: 30px;
   color: white;
-  word-break: break-all;
-  position: absolute;
-  padding: 15px;
-  top: 350px;
+  z-index: 1;
 }
 
 .famous-memes img {
@@ -42,6 +41,8 @@ body {
 
 #meme-image-container img {
   width: 100%;
+  position: absolute;
+  height: 100%;
 }
 
 .btns {

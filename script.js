@@ -11,24 +11,27 @@ const imgMeme1 = document.querySelector('#meme-1');
 const imgMeme3 = document.querySelector('#meme-3');
 const imgMeme4 = document.querySelector('#meme-4');
 const imgMeme2 = document.querySelector('#meme-2');
-const loadFile = document.getElementById('meme-insert');
+const memeInsert = document.querySelector('#meme-insert');
 
 // loadFile based on https://stackoverflow.com/questions/4459379/preview-an-image-before-it-is-uploaded
 
-loadFile.onchange = (e) => {
-  memeImg.src = URL.createObjectURL(e.target.files[0]);
-  memeImg.onloadend = () => {
-    URL.revokeObjectURL(memeImg.src);
-    inputText.value = '';
-    text.innerText = '';
+const loadFile = () => {
+  memeInsert.onchange = (e) => {
+    memeImg.src = URL.createObjectURL(e.target.files[0]);
   };
 };
 
+loadFile();
+
 // Insert text
 
-inputText.addEventListener('keydown', () => {
-  text.innerText = inputText.value.toUpperCase();
-});
+const createMessage = () => {
+  inputText.addEventListener('input', () => {
+    text.textContent = inputText.value;
+  });
+};
+
+createMessage();
 
 // style container
 

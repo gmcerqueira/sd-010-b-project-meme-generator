@@ -10,21 +10,20 @@
   <body>
     <h1>Meme Generator</h1>
     <div class="inputs">
-      <input
-        id="meme-insert"
-        type="file"
-        accept="image/*"
-      />
       <input id="text-input" type="text" maxlength="60" />
+      <input
+      id="meme-insert"
+      type="file"
+      accept="image/*"
+      onchange="loadFile(event)"
+    />
+
     </div>
 
-    <div id="meme-image-container">
-        <div id="meme-text"></div>
-      <img id="meme-image" src="" alt="" >
-
-    </img>
-
-    </div>
+    <section id="meme-image-container">
+      <img id="meme-image" />
+      <p id="meme-text"></p>
+    </section>
 
     <div class="btns">
       <button id="fire">Fire</button>
