@@ -8,24 +8,30 @@ input {
   display: inline-block;
 }
 
-#canvas {
+#meme-image-container {
   border: 1px solid red;
   position: relative;
   margin: auto;
   margin-top: 30px;
   display: block;
   z-index: -1;
+  height: 400px;
+  width: 400px;
 }
 
-#background {
-  display: none;
+#meme-image {
+  object-fit: cover;
+  width: 400px;
+  height: 400px;
+  z-index: 0;
 }
 
-.memeText {
+#meme-text {
   position: absolute;
-  top: 450px;
-  width: 100%;
+  top: 300px;
+  width: 400px;
   text-align: center;
   font-size: 18px;
+  word-wrap: normal;
   z-index: 1;
 }
