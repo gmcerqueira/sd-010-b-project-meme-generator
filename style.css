@@ -1,0 +1,68 @@
+body {
+    width: 30%;
+    margin: auto;
+}
+
+#text-input {
+    margin-bottom: 10px;
+    width: 58.3%;
+}
+
+#meme-image-container {
+    display: flex;
+    width: 450px;
+    height: 520px;
+    border: solid 1px;
+}
+
+.meme-text {
+    text-align: center;
+    flex-wrap: wrap;
+    align-self: center;    
+    margin: auto;
+    margin-top: 85%;    
+    overflow-wrap: break-word;
+    width: 440px;
+    height: 168px;    
+    z-index: 2;
+}
+
+#meme-text {   
+    text-shadow: #000 5px 5px 5px; 
+    color: white;
+    font-family: 'Akaya Telivigala', cursive;
+    font-size: 30px;
+    font-weight: bold;
+    z-index: 2;
+}
+
+#meme-image-container {
+    background-color: white;
+}
+
+#img {
+    z-index: 1;
+    position: absolute;
+    width: 450px;
+    height: 520px;
+}
+
+#fake-button { 
+   font-size: 18px; 
+   margin-top: 30px;
+   cursor: pointer;
+   border-radius: 8px;
+   background-color: rgb(100, 204, 109);      
+}
+
+#fake-button:hover {
+    background-color: rgb(158, 212, 159);
+    font-size: 20px;    
+}
+
+#files {
+   visibility: hidden;
+   position: fixed;
+   margin-left: 999999px;    
+}
+
