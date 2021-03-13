@@ -29,15 +29,14 @@ texto.onkeyup = function escreve(event) {
 
 // https://stackoverflow.com/questions/4459379/preview-an-image-before-it-is-uploaded/27165977#27165977
 meme.addEventListener('click', function (event) {
-  const figura = event.target;  
-  insereFigura.src = figura.src;
+  const figuraMeme = event.target;
+  insereFigura.src = figuraMeme.src;
 });
-
 
 // https://www.w3schools.com/jsref/event_onchange.asp
 // https://stackoverflow.com/questions/11708797/inserting-a-file-input-as-an-img-in-the-dom
 window.URL = window.URL || window.webkitURL || window.mozURL;
-figura.onchange = function uploadImagem () {
+figura.onchange = function uploadImagem() {
   const url = URL.createObjectURL(this.files[0]);
   insereFigura.src = url;
-}
+};
