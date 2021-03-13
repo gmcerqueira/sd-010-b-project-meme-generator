@@ -34,8 +34,8 @@ divContainer.append(imgContainer);
 
 
 inputText.onkeyup = function write() {
-  if (inputText.value.length > 38) {
-    alert('O limite máximo é de 40 caracteres!');
+  if (inputText.value.length > 58) {
+    alert('O limite máximo é de 60 caracteres!');
   } else {
     textContainer.textContent = inputText.value;
   }
