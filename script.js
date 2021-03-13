@@ -1,10 +1,8 @@
-/*1 - Fazendo com que o texto digitado no input text apareça dentro do parágrafo */
-
-textInput = document.getElementById('text-input');
-divMemeText = document.getElementById('meme-text');
+const textInput = document.getElementById('text-input');
+const divMemeText = document.getElementById('meme-text');
 
 function insertTextInputInParagraph() {
-    divMemeText.innerText = textInput.value;
+  divMemeText.innerText = textInput.value;
 }
 
 textInput.addEventListener('keyup', insertTextInputInParagraph);
@@ -28,20 +26,19 @@ function changeContainerEarth() {
   memeImageContainer.setAttribute('style', 'border: groove 6px green');
 }
 
-buttonFire.addEventListener('click', changeContainerFire)
-buttonWater.addEventListener('click', changeContainerWater)
-buttonEarth.addEventListener('click', changeContainerEarth)
+buttonFire.addEventListener('click', changeContainerFire);
+buttonWater.addEventListener('click', changeContainerWater);
+buttonEarth.addEventListener('click', changeContainerEarth);
 
-memesImgs = document.getElementsByClassName('memes')
+const memesImgs = document.getElementsByClassName('memes');
 
 /* Exercicio 7 */
 
 function setImageMeme(e) {
-  let memeImage = document.getElementById('meme-image');
+  const memeImage = document.getElementById('meme-image');
   memeImage.setAttribute('src', e.target.src);
 }
 
 for (let index = 0; index < memesImgs.length; index += 1) {
   memesImgs[index].addEventListener('click', setImageMeme);
 }
-
