@@ -13,21 +13,18 @@
   </header>
 
   <div id="btns">
-    <input type="text" id="text-input" placeholder="texto aqui"></input>
+    <input type="text" id="text-input" placeholder="texto aqui" maxlength = "60"></input>
     <input type="file" id="meme-insert" accept="image/*"onchange="loadFile(event)">
   </div>
 
   <section id="meme-image-container">
-      <div>
+      <div id="span">
         <img id="meme-image"/>
-        <p id="meme-text">texto aqui</p>
+        <span id="meme-text"> </span>
       </div>
   </section>
 
- <div>
 
-
-</div>
 <script src="script.js"> </script>
 </body>
 </html>
