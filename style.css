@@ -1,9 +1,13 @@
 #meme-image {
   position: relative;
+  max-width: 400px;
 }
 
 #meme-text {
   position: absolute;
   top: 300px;
   left: 300px;
+  text-shadow: 5px 5px 5px black;
+  font-size: 30px;
+  color: white;
 }
