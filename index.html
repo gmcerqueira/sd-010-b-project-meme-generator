@@ -14,7 +14,7 @@
 
   <div id="btns">
     <input type="text" id="text-input" placeholder="texto aqui" maxlength = "60"></input>
-    <input type="file" id="meme-insert" accept="image/*"onchange="loadFile(event)">
+    <input type="file" id="files" onchange="document.getElementById('meme-image').src = window.URL.createObjectURL(this.files[0])">
   </div>
 
   <section id="meme-image-container" class="selected">
@@ -25,7 +25,7 @@
   </section>
 
   <section id="btn3">
-    <button id='fire'>fire </button>
+    <button id='fire'>fire   </button>
     <button id='water'>water </button>
     <button id='earth'>earth </button>
   </section>
