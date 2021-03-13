@@ -23,7 +23,6 @@ buttons.addEventListener('click', function (event) {
 texto.onkeyup = function escreve(event) {
   if (event.keyCode === 13 && texto.value.length > 0) {
     textoInserido.textContent = texto.value;
-    texto.value = '';
   }
 };
 
