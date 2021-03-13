@@ -1,7 +1,8 @@
 const buttons = document.getElementById('buttons');
-const container = document.getElementById('meme-image-container');
 const textoInserido = document.getElementById('meme-text');
 const texto = document.getElementById('text-input');
+const container = document.getElementById('meme-image-container');
+const meme = document.getElementById('memes');
 
 buttons.addEventListener('click', function (event) {
   const botaoEscolhido = event.target.id;
@@ -16,7 +17,7 @@ buttons.addEventListener('click', function (event) {
   }
 });
 
-//https://www.w3schools.com/jsref/event_onkeyup.asp
+// https://www.w3schools.com/jsref/event_onkeyup.asp
 texto.onkeyup = function escreve(event) {
   if (event.keyCode === 13 && texto.value.length > 0) {
     textoInserido.textContent = texto.value;
@@ -24,4 +25,9 @@ texto.onkeyup = function escreve(event) {
   }
 };
 
-
+// https://stackoverflow.com/questions/4459379/preview-an-image-before-it-is-uploaded/27165977#27165977
+meme.addEventListener('click', function (event) {
+  const figura = event.target;
+  const insereFigura = document.getElementById('meme-image');
+  insereFigura.src = figura.src;
+});
