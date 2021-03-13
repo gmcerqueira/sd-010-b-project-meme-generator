@@ -2,7 +2,9 @@ const buttons = document.getElementById('buttons');
 const textoInserido = document.getElementById('meme-text');
 const texto = document.getElementById('text-input');
 const container = document.getElementById('meme-image-container');
+const insereFigura = document.getElementById('meme-image');
 const meme = document.getElementById('memes');
+const figura = document.getElementById('meme-insert');
 
 buttons.addEventListener('click', function (event) {
   const botaoEscolhido = event.target.id;
@@ -27,7 +29,15 @@ texto.onkeyup = function escreve(event) {
 
 // https://stackoverflow.com/questions/4459379/preview-an-image-before-it-is-uploaded/27165977#27165977
 meme.addEventListener('click', function (event) {
-  const figura = event.target;
-  const insereFigura = document.getElementById('meme-image');
+  const figura = event.target;  
   insereFigura.src = figura.src;
 });
+
+
+// https://www.w3schools.com/jsref/event_onchange.asp
+// https://stackoverflow.com/questions/11708797/inserting-a-file-input-as-an-img-in-the-dom
+window.URL = window.URL || window.webkitURL || window.mozURL;
+figura.onchange = function uploadImagem () {
+  const url = URL.createObjectURL(this.files[0]);
+  insereFigura.src = url;
+}
