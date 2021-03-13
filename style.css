@@ -1,4 +1,4 @@
-body{
+body {
   background-image: url("img/wp3298162-background-meme.jpg");
 }
 
@@ -10,21 +10,18 @@ label {
   color: white;
 }
 
-#title ,#inputs {
+#title , #inputs {
   margin: auto;
   text-align: center;
 }
 
-#input{
-  
-}
 #title {
   font-size: 15px;
   color: white;
   border: black 1px solid;
   -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: rgb(101, 54, 105);
-} 
+  -webkit-text-stroke-color: rgb(101 , 54 , 105);
+}
 
 #meme-image-container {
   border: 1px solid black;
@@ -55,8 +52,40 @@ label {
   color: white;
   text-shadow: 5px 5px 5px black;
   z-index: 2;
-} 
+}
 
 #meme-insert {
   color: white;
+}
+
+#buttons {
+  width: fit-content;
+  display: block;
+  margin: auto;
+  margin-top: 20px;
+  align-content: center;
+}
+
+#fire {
+  background-color: red;
+  border: none;
+  width: 60px;
+  height: 20px;
+  margin-left: 5px;
+}
+
+#water {
+  background-color: blue;
+  border: none;
+  width: 60px;
+  height: 20px;
+  margin-left: 5px;
+}
+
+#earth {
+  background-color: green;
+  border: none;
+  width: 60px;
+  height: 20px;
+  margin-left: 5px;
 }
