@@ -9,13 +9,15 @@ color: white;
   display:flex;
   justify-content:center;
   margin-bottom: 10px;
-
+  margin-left: 173px;
 }
 
 #meme-image-container {
   display:flex;
-  justify-content:center;
-  border: 1px solid rgb(234, 238, 10);
+  justify-self: center;
+  width: 300px;
+  height: 300px;
+  margin: auto;
 
 }
 
@@ -23,11 +25,13 @@ color: white;
   position:absolute;
   justify-content:center;
   background-color: white;
-  border: 1px solid rgb(0, 0, 0);
   width: 300px;
   height: 300px;
   z-index: 1;
 
+}
+.selected {
+  border: 1px solid black
 }
 
 #meme-text{
@@ -47,3 +51,39 @@ color: white;
   font-size:30px;
   text-shadow:black 5px 5px 5px;
 }
+#btn3{
+  width:300px;
+  align-self:center;
+  margin:auto;
+  margin-top: 15px;
+
+}
+
+#fire{
+  background-color: red;
+  font-size:25px;
+
+}
+
+#water{
+  background-color:blue;
+  font-size:25px;
+
+}
+
+#earth{
+  background-color:green;
+  font-size:25px;
+
+}
+
+
+/* #red{
+  border: 3px dashed red;
+}
+#blue{
+  border: 5px blue double;
+}
+#brown{
+  border:6px groove green
+} */

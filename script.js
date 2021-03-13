@@ -1,4 +1,5 @@
 const digitText = document.querySelector('#text-input');
+let bordContainer = document.querySelector('#meme-image-container');
 
 let loadFile = (event) => {
   let memeImage = document.getElementById('meme-image');
@@ -10,10 +11,46 @@ let loadFile = (event) => {
 
 const addText = () => {
   digitText.addEventListener('keyup', () => {
-  let spanDigit = document.querySelector('#meme-text');
+    const spanDigit = document.querySelector('#meme-text');
     spanDigit.innerHTML = digitText.value;
 
   })
 }
 addText();
+
+const btnRed = () => {
+  let pegBtnRed = document.querySelector('#fire');
+    pegBtnRed.addEventListener('click',function(event) {
+      if (event.target == pegBtnRed){
+        bordContainer.style.border = '3px dashed red';
+        console.log('botao red')
+      }
+    })
+}
+btnRed();
+
+const btnBlue = () => {
+  let pegBtnBlue = document.querySelector('#water');
+    pegBtnBlue = addEventListener('click',function(event){
+      if (event.target == pegBtnBlue){
+         bordContainer.style.border = '5px blue double';
+         console.log('botao blue')
+      }
+
+    })
+
+}
+btnBlue();
+
+const btnGreen = () => {
+  let pegBtnGreen = document.querySelector('#earth');
+    pegBtnGreen = addEventListener('click',function(event){
+      if (event.target == pegBtnGreen){
+        bordContainer.style.border = '6px groove green';
+        console.log('botao green')
+      }
+
+    })
+}
+btnGreen();
 
