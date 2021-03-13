@@ -24,5 +24,11 @@ const insertImg = () => {
   memeInsert.addEventListener('change', showImg);
 };
 
+const checkInpumaxlengtht = (event) => {
+  const element = event.target;
+  const input = element.value.length;
+  if (input > 60) element.value = '';
+};
+
 addText();
 insertImg();
