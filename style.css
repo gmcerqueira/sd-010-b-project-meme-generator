@@ -15,7 +15,6 @@ h1 {
   margin: auto;
   margin-top: 30px;
   display: block;
-  z-index: -1;
   height: 400px;
   width: 400px;
   margin-left: 30px;
@@ -33,7 +32,7 @@ h1 {
   margin-left: 30px;
   color: white;
   font-size: medium;
-  font-weight: bold;
+  font-weight: 700px;
 }
 
 #water {
@@ -43,7 +42,7 @@ h1 {
   margin-left: 5px;
   color: white;
   font-size: medium;
-  font-weight: bold;
+  font-weight: 700px;
 }
 
 #earth {
@@ -53,7 +52,7 @@ h1 {
   margin-left: 5px;
   color: white;
   font-size: medium;
-  font-weight: bold;
+  font-weight: 700px;
 }
 
 #memes {
@@ -61,7 +60,6 @@ h1 {
   margin: auto;
   margin-top: 30px;
   display: block;
-  z-index: 3;
 }
 
 #meme-1 , #meme-2 , #meme-3 , #meme-4 {
@@ -69,7 +67,6 @@ h1 {
   margin-left: 30px;
   height: 100px;
   width: 100px;
-  z-index: 4;
 }
 
 /* https://developer.mozilla.org/pt-BR/docs/Web/CSS/text-shadow */
