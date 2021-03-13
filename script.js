@@ -2,21 +2,16 @@ const digitText = document.querySelector('#text-input');
 let bordContainer = document.querySelector('#meme-image-container');
 
 let loadFile = (event) => { let memeImage = document.getElementById('meme-image');
-   memeImage.src = URL.createObjectURL(event.target.files[0]);
-     memeImage.onload = function () {
-     URL.revokeObjectURL(memeImage.src);
-    };
+  memeImage.src = URL.createObjectURL(event.target.files[0]);
+    memeImage.onload = function () {
+    URL.revokeObjectURL(memeImage.src);
+  };
 }
-
-
-
-
 
 const addText = () => {
   digitText.addEventListener('keyup', () => {
     const spanDigit = document.querySelector('#meme-text');
     spanDigit.innerHTML = digitText.value;
-
   })
 }
 addText();
@@ -39,9 +34,7 @@ const btnBlue = () => {
          bordContainer.style.border = '5px blue double';
          console.log('botao blue')
       }
-
     })
-
 }
 btnBlue();
 

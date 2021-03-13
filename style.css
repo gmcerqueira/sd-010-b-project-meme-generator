@@ -5,44 +5,42 @@ font-size: 50px;
 color: white;
 
 }
-#btns{
+#btn{
   display:flex;
-  justify-content:center;
-  margin-bottom: 10px;
-  margin-left: 173px;
+  /* border: 1px solid rgb(208, 209, 212); */
+  /* justify-content: center; */
+  margin-left:522px;
 }
 
 #meme-image-container {
-  display:flex;
-  justify-self: center;
+  display:block;
   width: 300px;
   height: 300px;
   margin: auto;
   border: 1px solid black;
   background-color: white;
+  margin-top: 10px;
 
 }
 
 #meme-image {
   position:absolute;
-  justify-content:center;
-  background-color: white;
+  z-index: 1;
   width: 300px;
   height: 300px;
-  z-index: 1;
 
 }
 
-
-#meme-text{
-  margin-top:185px ;
-  width: 300px;
-  height:35px;
+#meme-text {
   position:absolute;
   z-index: 2;
+  margin-top:145px ;
+  width: 300px;
+  height:35px;
+
 }
 
-#span{
+#span {
   width: 300px;
   height: 300px;
   flex-wrap: wrap;
@@ -51,30 +49,32 @@ color: white;
   font-size:30px;
   text-shadow:black 5px 5px 5px;
 }
-#btn3{
+
+#btn3 {
+  display:flex;
   width:300px;
-  align-self:center;
   margin:auto;
-  margin-top: 15px;
+  margin-top: 10px;
+
 
 }
 
-#fire{
+#fire {
   background-color: red;
   font-size:25px;
-
+  color:white;
 }
 
-#water{
+#water {
   background-color:blue;
   font-size:25px;
-
+  color:white;
 }
 
-#earth{
+#earth {
   background-color:green;
   font-size:25px;
-
+  color:white;
 }
 
 
