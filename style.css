@@ -16,16 +16,23 @@ body {
   background-color: white;
 }
 
-#meme-text {  
+#text-container{
+float: initial;
+border: solid red;
+height: 120px;
+width: 450px;
+margin-top: 390px;
+}
+
+#meme-text {
+  position: absolute;
   text-align: center;
   flex-wrap: wrap;
-  align-self: center;    
-  margin: auto;
-  margin-top: 85%;    
+  align-self: center;
+  margin: auto; 
   overflow-wrap: break-word;
-  width: 440px;
-  height: 168px;   
-  text-shadow: black 5px 5px 5px; 
+  width: 440px;  
+  text-shadow: black 5px 5px 5px;
   color: white;
   font-family: 'Akaya Telivigala', cursive;
   font-size: 30px;
