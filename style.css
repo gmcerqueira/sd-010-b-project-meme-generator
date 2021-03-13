@@ -1,13 +1,14 @@
 h1 {
   text-align : center;
-  background-color: rgb(26, 172, 172);
+  background-color: rgb(26,172,172);
   font-size: 50px;
   color: white;
 
 }
+
 #btn {
   display: flex;
-  margin-left:522px;
+  margin-left: 522px;
 }
 
 #meme-image-container {
@@ -30,7 +31,7 @@ h1 {
 }
 
 #meme-text {
-  position:absolute;
+  position: absolute;
   z-index: 2;
   margin-top: 145px;
   width: 300px;
@@ -50,9 +51,9 @@ h1 {
 }
 
 #btn3 {
-  display:flex;
-  width:300px;
-  margin:auto;
+  display: flex;
+  width: 300px;
+  margin: auto;
   margin-top: 10px;
 
 
@@ -75,5 +76,3 @@ h1 {
   font-size: 25px;
   color: white;
 }
-
-
