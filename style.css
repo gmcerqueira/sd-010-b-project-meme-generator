@@ -1,19 +1,17 @@
-h1{
-text-align : center;
-background-color: rgb(26, 172, 172);
-font-size: 50px;
-color: white;
+h1 {
+  text-align : center;
+  background-color: rgb(26, 172, 172);
+  font-size: 50px;
+  color: white;
 
 }
-#btn{
-  display:flex;
-  /* border: 1px solid rgb(208, 209, 212); */
-  /* justify-content: center; */
+#btn {
+  display: flex;
   margin-left:522px;
 }
 
 #meme-image-container {
-  display:block;
+  display: block;
   width: 300px;
   height: 300px;
   margin: auto;
@@ -24,7 +22,7 @@ color: white;
 }
 
 #meme-image {
-  position:absolute;
+  position: absolute;
   z-index: 1;
   width: 300px;
   height: 300px;
@@ -34,9 +32,9 @@ color: white;
 #meme-text {
   position:absolute;
   z-index: 2;
-  margin-top:145px ;
+  margin-top: 145px;
   width: 300px;
-  height:35px;
+  height: 35px;
 
 }
 
@@ -44,10 +42,11 @@ color: white;
   width: 300px;
   height: 300px;
   flex-wrap: wrap;
-  overflow-wrap:break-word;
-  color:white;
-  font-size:30px;
-  text-shadow:black 5px 5px 5px;
+  overflow-wrap: break-word;
+  color: white;
+  font-size: 30px;
+  text-shadow: black 5px 5px 5px;
+
 }
 
 #btn3 {
@@ -61,20 +60,20 @@ color: white;
 
 #fire {
   background-color: red;
-  font-size:25px;
-  color:white;
+  font-size: 25px;
+  color: white;
 }
 
 #water {
-  background-color:blue;
-  font-size:25px;
-  color:white;
+  background-color: blue;
+  font-size: 25px;
+  color: white;
 }
 
 #earth {
-  background-color:green;
-  font-size:25px;
-  color:white;
+  background-color: green;
+  font-size: 25px;
+  color: white;
 }
 
 
