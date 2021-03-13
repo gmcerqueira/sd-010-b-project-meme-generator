@@ -9,23 +9,26 @@
 </head>
 <body>
   <header>
-    <h1>Meu MeMe</h1>
+    <h1>Meme Generator</h1>
   </header>
 
-  <section id="meme-image-container">
-    <div id="meme-image">
-    <img id="meme-insert" src="gif" alt="A carregar....">
-      <div id="meme-text" style= 'background-color: brown;'>
-
-      </div>
-    </div>
-  </section>
-
-  <div id="input">
-    <button id="insert-image">insertText</button>
-    <input id="text-input" type="text" placeholder="texto aqui"></input>
+  <div id="btns">
+    <input type="text" id="text-input" placeholder="texto aqui"></input>
+    <input type="file" id="meme-insert" accept="image/*"onchange="loadFile(event)">
   </div>
 
+  <section id="meme-image-container">
+      <div>
+        <img id="meme-image"/>
+        <p id="meme-text">texto aqui</p>
+      </div>
+  </section>
+
+ <div>
+
+
+</div>
 <script src="script.js"> </script>
 </body>
 </html>
+
