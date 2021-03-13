@@ -17,33 +17,34 @@
   text-shadow: 5px 5px 5px black;
 }
 
-#fire{
-    background-color: red;
+#fire {
+  background-color: red;
 }
 
-#water{
-    background-color: blue;
+#water {
+  background-color: blue;
 }
 
-#earth{
-    background-color: green;
+#earth {
+  background-color: green;
 }
 
 .default {
-    border: 1px solid;
+  border: 1px solid;
 }
-.fire-style{
-    border: 3px dashed red;    
+
+.fire-style {
+  border: 3px dashed red;
 }
 
 .water-style {
-    border: 5px double blue;
+  border: 5px double blue;
 }
 
 .earth-style {
-    border: 6px groove green;
+  border: 6px groove green;
 }
 
-#imgs img{
-    width: 100px;
+#imgs img {
+  width: 100px;
 }
