@@ -4,7 +4,7 @@ textInput = document.getElementById('text-input');
 divMemeText = document.getElementById('meme-text');
 
 function insertTextInputInParagraph() {
-    divMemeText.innerText = textInput.value; 
+    divMemeText.innerText = textInput.value;
 }
 
 textInput.addEventListener('keyup', insertTextInputInParagraph);
