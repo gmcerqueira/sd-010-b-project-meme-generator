@@ -15,6 +15,7 @@ inputImg.setAttribute('type', 'file');
 inputImg.id = 'meme-insert';
 inputImg.setAttribute('accept','image');
 inputText.id = 'text-input';
+inputText.setAttribute('maxlength', '60');
 
 const divContainer = document.createElement('div');
 const textContainer = document.createElement('div');
