@@ -14,8 +14,6 @@ const addText = () => {
 
 const showImg = (event) => {
   const element = event.target;
-  const img = document.createElement('img');
-  container.appendChild(img);
   const url = URL.createObjectURL(element.files[0]);
   memeImg.src = url;
 };
@@ -24,11 +22,27 @@ const insertImg = () => {
   memeInsert.addEventListener('change', showImg);
 };
 
-const checkInpumaxlengtht = (event) => {
-  const element = event.target;
-  const input = element.value.length;
-  if (input > 60) element.value = '';
+const elementGenerator = (id, name) => {
+  const element = document.querySelector(id);
+  element.addEventListener('click', () => {
+    container.className = '';
+    container.classList.add(name);
+  });
 };
 
+const imgGenerator = (id, url) => {
+  const element = document.querySelector(id);
+  element.addEventListener('click', () => {
+    memeImg.src = url;
+  });
+};
+
+imgGenerator('#meme-1', '/imgs/meme1.png');
+imgGenerator('#meme-2', '/imgs/meme2.png');
+imgGenerator('#meme-3', '/imgs/meme3.png');
+imgGenerator('#meme-4', '/imgs/meme4.png');
+elementGenerator('#fire', 'fire-style');
+elementGenerator('#water', 'water-style');
+elementGenerator('#earth', 'earth-style');
 addText();
 insertImg();
