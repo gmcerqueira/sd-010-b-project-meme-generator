@@ -28,3 +28,9 @@
 #earth {
   background-color: green;
 }
+
+.memes {
+  width: 20%;
+  cursor: pointer;
+  border: solid 1px black;
+}

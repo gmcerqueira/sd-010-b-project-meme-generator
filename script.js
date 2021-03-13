@@ -31,3 +31,17 @@ function changeContainerEarth() {
 buttonFire.addEventListener('click', changeContainerFire)
 buttonWater.addEventListener('click', changeContainerWater)
 buttonEarth.addEventListener('click', changeContainerEarth)
+
+memesImgs = document.getElementsByClassName('memes')
+
+/* Exercicio 7 */
+
+function setImageMeme(e) {
+  let memeImage = document.getElementById('meme-image');
+  memeImage.setAttribute('src', e.target.src);
+}
+
+for (let index = 0; index < memesImgs.length; index += 1) {
+  memesImgs[index].addEventListener('click', setImageMeme);
+}
+
