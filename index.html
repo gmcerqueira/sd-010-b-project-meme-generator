@@ -14,8 +14,7 @@
 
   <div id="btns">
     <input type="text" id="text-input" placeholder="texto aqui" maxlength = "60"></input>
-    <input type="file" id="files" onchange="document.getElementById('meme-image').src = window.URL.createObjectURL(this.files[0])">
-  </div>
+    <input type="file" id="meme-insert" accept="image/*"onchange="loadFile(event)">
 
   <section id="meme-image-container" class="selected">
       <div id="span">
