@@ -14,8 +14,9 @@ h1 {
   position: relative;
   margin: auto;
   margin-top: 30px;
-  display: block;
-  z-index: -1;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
   height: 400px;
   width: 400px;
   margin-left: 30px;
@@ -60,34 +61,27 @@ h1 {
   position: relative;
   margin: auto;
   margin-top: 30px;
-  display: block;
-  z-index: 3;
+  display: block;  
 }
 
 #meme-1 , #meme-2 , #meme-3 , #meme-4 {
   object-fit: cover;
   margin-left: 30px;
   height: 100px;
-  width: 100px;
-  z-index: 4;
+  width: 100px;  
 }
 
 /* https://developer.mozilla.org/pt-BR/docs/Web/CSS/text-shadow */
-#meme-text {
-  position: absolute;
+#meme-text {  
   font-size: 30px;
   text-shadow: 5px 5px 5px black;
   color: white;
-  top: 300px;
-  width: 370px;
-  text-align: center;
-  z-index: 2;
+  z-index: 1;
 }
 
 #meme-image {
   object-fit: cover;
-  position: relative;
-  width: 400px;
-  height: 400px;
-  z-index: 1;
+  position: absolute;
+  width: 100%;
+  height: 100%;  
 }
