@@ -26,10 +26,10 @@ main {
 #meme-text {
   color: white;
   font-size: 30px;
-  margin-top: 300px;
+  margin-top: 200px;
   position: absolute;
   text-align: center;
-  text-shadow: 5px 5px 5px;
+  text-shadow: black 5px 5px 5px;
   z-index: 2;
 }
 
