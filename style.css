@@ -10,7 +10,12 @@ main {
   display: inline;
 }
 
+#meme-insert {
+  margin-left: 15px;
+}
+
 #meme-image-container {
+  position: relative;
   border: 1px solid black;
   height: 350px;
   margin: 30px 0;
@@ -18,7 +23,16 @@ main {
 }
 
 #meme-text {
-  overflow: hidden;
-  text-align: center;
   margin-top: 300px;
+  position: absolute;
+  text-align: center;
+  z-index: 2;
+}
+
+#meme-image {
+  height: 100%;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 1;
 }
