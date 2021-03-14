@@ -22,3 +22,27 @@
   font-size: 30px;
   color: white;
 }
+
+#fire {
+  border: 3px dashed red;
+  background-color:  red;
+  color: white;
+}
+
+#water {
+  border: 5px double blue;
+  background-color: blue;
+  color: white;
+}
+
+#earth {
+  border: 6px groove green;
+  background-color: green;
+  color: white;
+}
+
+#samples > img {
+  padding: 5px;
+  max-width: 50px;
+  max-height: 50px;
+}
