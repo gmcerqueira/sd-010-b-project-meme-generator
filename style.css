@@ -2,9 +2,17 @@ h1{
     font-weight: bold;
     text-align: center;
 }
-#text-input{
-
+#meme-image-container{
+    border: solid 1px black;
+    background-color: white;
+    height: 300px;
+    width: 50%;
 }
 #meme-text{
     margin-top: 200px;
+    font-size: 20px;
+    position: absolute;
+}
+img{
+    background: 100%
 }
