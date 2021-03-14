@@ -16,6 +16,24 @@
   width: 400px;
 }
 
+#meme-text {
+  position: absolute;
+  top: 250px;
+  width: 400px;
+  word-wrap: break-word;
+  text-align: center;
+  font-size: 30px;
+  color: white;
+  text-shadow: 5px 5px 5px black;
+  z-index: 2;
+}
+
+#meme-image {
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
 #buttons {
   display: block;
   margin-top: 20px;
@@ -61,23 +79,4 @@
   margin: auto;
   height: 100px;
   width: 100px;
-}
-
-/* https://developer.mozilla.org/pt-BR/docs/Web/CSS/text-shadow */
-#meme-text {
-  position: absolute;
-  top: 250px;
-  width: 400px;
-  word-wrap: break-word;
-  text-align: center;
-  font-size: 30px;
-  color: white;
-  text-shadow: 5px 5px 5px black;
-  z-index: 2;
-}
-
-#meme-image {
-  width: 100%;
-  height: 100%;
-  z-index: 1;
 }
