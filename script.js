@@ -17,5 +17,18 @@ let loadFile = function(evento){
     }
 };
     
+let memeImageContainer = document.getElementById('meme-image-container');
 
+function corDaBorda(evento){
+    let cor = evento.target.style.border
+    memeImageContainer = cor
+}
+
+const fire = document.getElementById('fire');
+const water = document.getElementById('water');
+const earth = document.getElementById('earth');
+
+fire.addEventListener('click', corDaBorda)
+water.addEventListener('click', corDaBorda)
+earth.addEventListener('click', corDaBorda)
 
