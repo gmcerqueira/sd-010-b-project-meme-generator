@@ -1,13 +1,15 @@
 const inputText = document.getElementById('text-input');
 const inputImage = document.getElementById('meme-insert');
-const divText = document.getElementById('meme-text');
+const text = document.getElementById('meme-text');
 const image = document.getElementById('meme-image');
 
 function inputValue() {
   inputText.addEventListener('keyup', () => {
-    divText.innerText = inputText.value;
+    text.innerText = inputText.value;
   });
 }
+
+// nessa função me baseei no código da colega Alessandra Rosa Rezende
 function fillMemeImageContainer() {
   window.URL = window.URL || window.webkitURL || window.mozURL;
   inputImage.addEventListener('change', () => {
