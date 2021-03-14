@@ -5,7 +5,11 @@ const imageMeme = document.getElementById('meme-image');
 
 function inputTextMeme() {
   inputText.addEventListener('keyup', () => {
-    textMeme.innerHTML = inputText.value;
+    if (inputText.value.length <= 60) {
+      textMeme.innerHTML = inputText.value;
+    } else {
+      alert('Limite de 60 caracteres');
+    }
   });
 }
 inputTextMeme();
