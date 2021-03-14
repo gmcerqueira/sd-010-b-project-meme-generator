@@ -7,12 +7,12 @@ function insereTexto() {
 caixaTexto.addEventListener('input', insereTexto);
 
 // https://stackoverflow.com/questions/4459379/preview-an-image-before-it-is-uploaded/27165977#27165977
-let loadFile = function (evento) {
+const loadFile = function (evento) {
   const imagem = document.getElementById('meme-image');
   imagem.src = URL.createObjectURL(evento.target.files[0]);
   imagem.onload = function () {
     URL.revokeObjectURL(imagem.src);
-  }
+  };
 };
 
 const memeImageContainer = document.getElementById('meme-image-container');
@@ -40,12 +40,16 @@ const meme3 = document.getElementById('meme-3');
 const meme4 = document.getElementById('meme-4');
 
 function insereMeme(evento) {
-    const img = evento.target.src;
-    const imagem = document.getElementById('meme-image');
-    imagem.src = img
+  const img = evento.target.src;
+  console.log(evento.target);  
+  const imagem = document.getElementById('meme-image');
+  imagem.src = img;
+  imagem.onload = function () {
+    URL.revokeObjectURL(imagem.src);
+  };
 }
 
 const memes = [meme1, meme2, meme3, meme4]
 for (let i = 0; i < memes.length; i += 1) {
-    memes[i].addEventListener('click', insereMeme)
+  memes[i].addEventListener('click', insereMeme);
 }
