@@ -19,12 +19,11 @@
 
     <div id="file"> 
         <p>File: </p>
-        <input type="file" name="" id="meme-insert">
+        <input type="file" accept="image/*" id="meme-insert" onchange="loadFile(event)">
     </div>
 
     <div id="meme-image-container">
-        <div id="meme-image"></div> 
-        <img id="img" src="" alt="">
+        <img id="meme-image" src="" alt="">
         <div id="meme-text"></div>
     </div>
 

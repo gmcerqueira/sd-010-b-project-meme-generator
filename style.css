@@ -14,8 +14,17 @@
 #meme-image-container {
     border: 1px solid black;
     display: block;
-    max-width: 40%;
-    min-height: 500px;
+    width: 400px;
+    height: 300px;
+    margin: 5px;
+    position: relative;
+    background-color: white;
+}
+
+#meme-image {
+    position: absolute;
+    max-width: 100%;
+    min-height: 100%;
 }
 
 #meme-text {
@@ -23,8 +32,5 @@
     font-size: 30px;
     color: white;
     text-shadow: 5px 5px 5px black ;
-}
-
-#meme-image {
-    position: relative;
+    margin-top: 180px;
 }
