@@ -1,81 +1,75 @@
-let textInput = document.getElementById('text-input')
-let textDiv = document.getElementById('meme-text')
-let imgInput = document.getElementById('meme-insert')
+const container = document.getElementById('meme-image-container');
+const textInput = document.getElementById('text-input');
+const textDiv = document.getElementById('meme-text');
+const imgInput = document.getElementById('meme-insert');
+const imgID = 'meme-image';
 
 function createEl(tagName) {
- let element = document.createElement(tagName)
- return element
+  const element = document.createElement(tagName);
+  return element;
 }
 
 function setBorder(event) {
-  let el = event.target
-  let CSSprop = window.getComputedStyle(el).getPropertyValue("border")
-  let container = document.getElementById('meme-image-container')
-  container.style.border = CSSprop
+  const el = event.target;
+  const CSSprop = window.getComputedStyle(el).getPropertyValue('border');
+  container.style.border = CSSprop;
 }
 
 function setText() {
-  let text = textInput.value
-  textDiv.innerHTML = text
+  const text = textInput.value;
+  textDiv.innerHTML = text;
 }
 
 function buttonHandler() {
-  let buttons = document.getElementsByTagName('button')
-  for (let el of buttons){
-    el.addEventListener('click', setBorder)
-  }
+  const buttons = document.querySelectorAll('button');
+  buttons.forEach((el) => el.addEventListener('click', setBorder));
 }
 
-
 function clearLastImg() {
-  if (document.getElementById('meme-image')){
-    document.getElementById('meme-image').remove()
+  if (document.getElementById(imgID)) {
+    document.getElementById(imgID).remove();
   }
 }
 // LER O CONTEÚDO DE UM ARQUIVO:
 // https://developer.mozilla.org/pt-BR/docs/Web/API/FileReader/readAsDataURL
 function setImg() {
-  clearLastImg()
-  let el = createEl('img')
-  let img = document.getElementById('meme-image-container').appendChild(el)
-  img.id = 'meme-image'
-  let preview = document.querySelector('#meme-image');
-  let file    = document.querySelector('#meme-insert[type=file]').files[0];
-  let reader  = new FileReader();
-  
-  reader.onloadend = function () {
+  clearLastImg();
+  const el = createEl('img');
+  const img = container.appendChild(el);
+  img.id = imgID;
+  const preview = document.querySelector('#meme-image');
+  const file = document.querySelector('#meme-insert[type=file]').files[0];
+  const reader = new FileReader();
+
+  reader.onloadend = function func() {
     preview.src = reader.result;
-  }
-  
+  };
+
   if (file) {
     reader.readAsDataURL(file);
   } else {
-    preview.src = "";
+    preview.src = '';
   }
 }
 
 function setSample(event) {
-  clearLastImg()
-  let el = event.target
-  let clone = el.cloneNode(true)
-  let img = document.getElementById('meme-image-container').appendChild(clone)
-  img.id = 'meme-image'
+  clearLastImg();
+  const el = event.target;
+  const clone = el.cloneNode(true);
+  const img = document.getElementById('meme-image-container').appendChild(clone);
+  img.id = imgID;
 }
 
 function sampleHandler() {
-  
-  let samples = document.querySelectorAll('#samples img')
-  samples.forEach( el => {
-    el.addEventListener('click', setSample)
-  })
-  
+  const samples = document.querySelectorAll('#samples img');
+  samples.forEach((el) => {
+    el.addEventListener('click', setSample);
+  });
 }
 
 window.onload = function init() {
-  
-  sampleHandler()
-  buttonHandler()
-  textInput.addEventListener('input', setText)
-  imgInput.addEventListener('change', setImg)
-
-}
+  sampleHandler();
+  buttonHandler();
+  textInput.addEventListener('input', setText);
+  imgInput.addEventListener('change', setImg);
+};
