@@ -21,9 +21,7 @@ buttons.addEventListener('click', function (event) {
 
 // https://www.w3schools.com/jsref/event_onkeyup.asp
 texto.onkeyup = function escreve(event) {
-  if (event.keyCode === 13 && texto.value.length > 0) {
-    textoInserido.textContent = texto.value;
-  }
+  textoInserido.textContent = texto.value;
 };
 
 // https://stackoverflow.com/questions/4459379/preview-an-image-before-it-is-uploaded/27165977#27165977
