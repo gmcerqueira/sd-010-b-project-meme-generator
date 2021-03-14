@@ -18,15 +18,24 @@ let loadFile = function(evento){
 };
     
 let memeImageContainer = document.getElementById('meme-image-container');
-
-function corDaBorda(evento){
-    let cor = evento.target.style.border
-    memeImageContainer = cor
-}
-
 const fire = document.getElementById('fire');
 const water = document.getElementById('water');
 const earth = document.getElementById('earth');
+
+function corDaBorda(evento){
+    let cor = evento.target.id;
+    switch(cor){
+        case 'fire':
+            memeImageContainer.style.border = '3px dashed red';
+            break;
+        case 'water':
+            memeImageContainer.style.border = '5px double blue';
+            break;
+        case 'earth':
+            memeImageContainer.style.border = '6px groove green';
+            break;
+    }
+}
 
 fire.addEventListener('click', corDaBorda)
 water.addEventListener('click', corDaBorda)

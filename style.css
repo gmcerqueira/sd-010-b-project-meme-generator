@@ -35,23 +35,23 @@
     margin-top: 220px;
 }
 
-button{
+button {
     margin: 5px;
 }
-#fire{
+#fire {
     border: 3px dashed red;
     font-size: 17px;
     color: red;
     margin-left: 15px;
 }
 
-#water{
+#water {
     border: 5px double blue;
     font-size: 16px;
     color: blue;
 }
 
-#earth{
+#earth {
     border: 6px groove green;
     font-size: 15px;
     color: green;
