@@ -1,27 +1,18 @@
-const inputText = document.querySelector(' #text-input ');
-const spanText = document.querySelector(' #meme-text ');
-const inputImg = document.querySelector('#files');
-const fakeBtn = document.querySelector('#fake-button');
+const textInput = document.querySelector('#text-input');
+const textWriter = document.querySelector('#meme-text');
 
-const getInputText = () => {
-	let text = inputText.value;
+const getInputText = () => {	
+	let text = textInput.value;
 	text = text.toUpperCase();
-	spanText.innerHTML = text;
-	};
+	textWriter.innerHTML = text;
+}
 
-const inputGivenText = () => {    
-	inputText.addEventListener('keyup' , () => {        
-	getInputText();
-	});   
-	};
-
-const fakeBtnClick = () => {
-	fakeBtn.addEventListener('click' , () => {
-		inputImg.click();		
+const writeTextInput = () => {
+	textInput.addEventListener('keyup' , () => {
+		getInputText();
 	})
-	}
+}
 
-window.onload = () => {  
-	inputGivenText(); 
-	fakeBtnClick();	
-	};
+window.onload = () => {
+	writeTextInput();
+}

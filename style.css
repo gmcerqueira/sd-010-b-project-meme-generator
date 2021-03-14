@@ -1,61 +1,57 @@
-body {
-  width: 30%;
-  margin: auto;
+h1{
+  margin-left: 500px;
+  margin-top: 80px;
 }
 
-#text-input {
-  margin-bottom: 10px;
-  width: 58.3%;
+#btn-config {
+  margin-top: 80px;
+  margin-left: 500px;
 }
 
-#meme-image-container {
+#meme-image-container{
+  margin-left: 500px;
+  margin-top: 30px;
+  border: solid black 1px;
+  height: 400px;
+  width: 400px;
+  background-color: white; 
+}
+
+#text-input{
+  padding: 8px;
+}
+
+#text-container{
+  position: absolute;  
+  margin-top: 222px;
+  margin-left: 45px;
   display: flex;
-  width: 450px;
-  height: 520px;
-  border: solid 1px;
-  background-color: white;
+  width: 300px;
+  flex-wrap: wrap;
+  border: solid rgb(221, 13, 13) 1px;
+  z-index: 2;
 }
 
-#meme-text {
+#meme-text{
   position: absolute;
   text-align: center;
-  flex-wrap: wrap;
-  align-self: center;
-  margin: auto; 
-  margin-top: 400px;
-  overflow-wrap: break-word;
-  width: 440px;  
-  text-shadow: black 5px 5px 5px;
-  color: white;
-  font-family: 'Akaya Telivigala', cursive;
   font-size: 30px;
-  font-weight: bold;
+  color: white;
+  text-shadow: black 5px 5px 5px;
+  width: 300px;
+  flex-wrap: wrap;
+  overflow-wrap: break-word;
+  border: solid rgb(13, 221, 13) 1px;
   z-index: 1;
 }
 
-#img {
-  z-index: 1;
-  position: absolute;
-  width: 450px;
-  height: 520px;
+#img{
+  position: absolute;  
+  z-index: 2;
+  background-color: white;
+  height: 400px;
+  width: 400px;
+  z-index: 2; 
 }
 
-#fake-button{ 
-  font-size: 18px; 
-  margin-top: 10px;
-  margin-bottom: 10px;
-  cursor: pointer;
-  border-radius: 8px;
-  background-color: rgb(100, 204, 109);      
-}
 
-#fake-button:hover {
-  background-color: rgb(158, 212, 159);
-  font-size: 20px;    
-}
-
-#files {
-  visibility: hidden;
-  position: fixed;
-  margin-left: 999999px;    
-}

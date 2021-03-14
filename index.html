@@ -1,34 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Akaya+Telivigala&display=swap" rel="stylesheet">
-    <title>Meme-Generator</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Meme-Generator</title>  
 </head>
 <body>
-    <header>
-        <h1>Meme-Generator</h1>
-    </header>
-        <div class="btns">
-          <input id="text-input" type="text" placeholder="Digite uma frase para seu meme...." maxlength="60">
-          <input type="file" id="files" onchange="document.getElementById('img').src = window.URL.createObjectURL(this.files[0])">
-          <button id="fake-button" class="meme-insert">Escolher arquivo</button>
-        </div>        
-        <div id="meme-image-container">  
-          <div class="mini-container">
-            <img id="img" src="">          
-            <span id="meme-text"></span> 
-          </div>                                                   
-        </div>
-        
-        
-        
-        
-   
-    <script src="script.js"></script>
+  <header>
+    <h1>Meme-Generator!</h1>
+  </header>
+  <div id="btn-config">
+    <input type="text" id="text-input" placeholder="Texto do meme..." maxlength="60">
+    <input type="file" >
+  </div>
+  
+  <div id="meme-image-container">
+    <img id="img" src="">
+    <div id="text-container">
+      <span id="meme-text"></span>
+    </div>
+  </div>
+  <script src="script.js"></script>
 </body>
 </html>
