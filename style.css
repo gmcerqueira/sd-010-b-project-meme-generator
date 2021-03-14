@@ -1,4 +1,4 @@
-#text, div, p {
+#text , div , p {
   display: inline-block;
 }
 
@@ -6,7 +6,7 @@
   width: 100%;
 }
 
-#file, div, p {
+#file , div , p {
   display: inline-block;
 }
 
@@ -30,13 +30,14 @@
   position: absolute;
   font-size: 30px;
   color: white;
-  text-shadow: 5px 5px 5px black ;
+  text-shadow: 5px 5px 5px black;
   margin-top: 220px;
 }
 
 button {
   margin: 5px;
 }
+
 #fire {
   font-size: 17px;
   background-color: red;
@@ -52,3 +53,21 @@ button {
   font-size: 15px;
   background-color: green;
 }
+
+#meme-1, #meme-2, #meme-3, #meme-4 {
+    border: 1px solid black;
+    width: 80px;
+    height: 80px;
+    margin: 15px;
+}
+
+#meme-1 img, #meme-2 img, #meme-3 img, #meme-4 img {
+    max-width: 100%;
+    min-height: 100%;
+}
+
+.buttom {
+    display: block;
+    margin: 20px;
+}
+
