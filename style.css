@@ -1,0 +1,11 @@
+#meme-image-container {
+  background-image: url('images/');
+  width: 400px;
+  height: 400px;
+  position: relative;
+  border: 1px solid black;
+}
+
+#meme-text {
+  position: absolute;
+}
