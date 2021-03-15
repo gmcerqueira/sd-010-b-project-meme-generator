@@ -1,5 +1,5 @@
 #meme-image-container {
-  background-image: url('images/');
+  /* background-image: url('images/'); */
   width: 400px;
   height: 400px;
   position: relative;
@@ -8,4 +8,14 @@
 
 #meme-text {
   position: absolute;
+}
+
+#meme-image {
+  width: 100%;
+}
+
+#meme-text {
+  left: 0;
+  top: 300px;
+  /* word-break: break-all; */
 }
