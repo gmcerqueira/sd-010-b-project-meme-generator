@@ -10,7 +10,9 @@
   position: absolute;
   left: 0;
   top: 300px;
-
+  text-shadow: 5px 5px 5px black;
+  font-size: 30px;
+  color: white;
   /* word-break: break-all; */
 }
 
