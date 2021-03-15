@@ -41,7 +41,6 @@ const meme4 = document.getElementById('meme-4');
 
 function insereMeme(evento) {
   const img = evento.target.src;
-  console.log(evento.target);  
   const imagem = document.getElementById('meme-image');
   imagem.src = img;
   imagem.onload = function () {

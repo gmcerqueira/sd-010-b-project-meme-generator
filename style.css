@@ -22,8 +22,8 @@
 
 #meme-image {
   position: absolute;
-  max-width: 100%;
-  min-height: 100%;
+  min-width: 100%;
+  max-height: 100%;
 }
 
 #meme-text {
@@ -56,7 +56,7 @@ button {
 
 #meme-1 , #meme-2 , #meme-3 , #meme-4 {
   border: 1px solid black;
-  width: 80px;
+  width: 70px;
   height: 80px;
   margin: 15px;
 }
