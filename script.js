@@ -1,7 +1,7 @@
 const caixaTexto = document.querySelector('#text-input');
 const textoDigitado = document.querySelector('#meme-text');
 
-function insereTexto() {
+function insereTexto() {  
   textoDigitado.innerHTML = caixaTexto.value;
 }
 caixaTexto.addEventListener('input', insereTexto);

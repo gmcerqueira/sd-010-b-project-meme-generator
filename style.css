@@ -1,5 +1,5 @@
 #text , div , p {
-  display: inline-block;
+  display: inline-block;  
 }
 
 #text {
@@ -31,7 +31,8 @@
   font-size: 30px;
   color: white;
   text-shadow: 5px 5px 5px black;
-  margin-top: 220px;
+  margin-top: 200px;
+  max-width: 100%;  
 }
 
 button {
