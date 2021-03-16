@@ -12,5 +12,5 @@ let fileInput=document.getElementById('meme-insert')
 	let url=URL.createObjectURL(event.target.files[0]);
     image.style.backgroundImage=`url(${url})`
    
-};
+}
 fileInput.addEventListener('input',uploadImage)
