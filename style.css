@@ -5,10 +5,10 @@
 
 #meme-image-container {
   position: relative;
+  min-width: 200px;
+  min-height: 200px;
   max-width: 400px;
   max-height: 400px;
-  margin: 0 auto;
-  margin-top: 100px;
   background-color: white;
   border: 1px solid black;
 }
