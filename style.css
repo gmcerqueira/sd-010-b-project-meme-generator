@@ -1,13 +1,21 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
 }
 
 #meme-image-container {
   position: relative;
+  max-width: 400px;
+  max-height: 400px;
+  margin: 0 auto;
+  margin-top: 100px;
   background-color: white;
   border: 1px solid black;
+}
+
+#meme-image {
+  max-width: 400px;
+  max-height: 400px;
 }
 
 #meme-text {
