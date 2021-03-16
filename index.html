@@ -10,10 +10,12 @@
 <body>
     <h1>Meme generator</h1>
 
-    <input type="text" id="text-input">
-    <br>
-    <br>
-    <input type="file" name="picture" id="picture">
+    <form action="" method="post" enctype="multipart/form-data">
+        <input type="text" id="text-input">
+        <br>
+        <br>
+        <input type="file" name="picture" id="picture">
+    </form>
 
     <div id="meme-image-container">
         <p id="meme-text"></p>
