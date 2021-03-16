@@ -9,19 +9,23 @@
   <meta name="author" content="Robson Cardozo">
   <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-    <header><h1>Meme Generator</h1></header>
-
-    <form>
-        <input type='text' id='text-input'>
-    </form>
-
-    <section id='meme-image-container'>
-        <p id='meme-text'>test</p>
-        <canvas id='meme-image'></canvas>
-    </section>
-
-<script src="script.js"></script>
+  <h1>Meme Generator</h1>
+  <main>
+    <input id="text-input" type="text" maxlength="60">
+    <input id="meme-insert" type="file">
+    
+    <container id="meme-image-container">
+      <img id="meme-image" />
+      <p id="meme-text"></p>
+    </container>
+    
+    <div id="border-buttons">
+      <button id="fire" class="change-button">Fire</button>
+      <button id="water" class="change-button">Water</button>
+      <button id="earth" class="change-button">Earth</button>
+    </div>
+  </main>
 </body>
+<script src="script.js"></script>
 </html>
