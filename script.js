@@ -25,3 +25,22 @@ function addEventFileInput() {
   fileInput.addEventListener('change', loadFile);
 }
 addEventFileInput();
+
+function addColoredFrame(event) {
+  const imageContainer = document.getElementById('meme-image-container');
+  if (event.target.id === 'fire') {
+    imageContainer.style.border = '3px dashed red';
+  }
+  if (event.target.id === 'water') {
+    imageContainer.style.border = '5px double blue';
+  }
+  if (event.target.id === 'earth') {
+    imageContainer.style.border = '6px groove green';
+  }
+}
+
+function addEventColoredFrameButtons() {
+  const groupButtons = document.getElementById('colored-frames-buttons');
+  groupButtons.addEventListener('click', addColoredFrame);
+}
+addEventColoredFrameButtons();
