@@ -1,0 +1,18 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+#meme-image-container {
+}
+
+#meme-image {
+    position: relative;
+}
+
+#meme-text {
+    position: absolute;
+    z-index: 1;
+    color: white;
+}
