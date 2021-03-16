@@ -13,6 +13,7 @@
   text-shadow: 5px 5px 5px black;
   font-size: 30px;
   color: white;
+
   /* word-break: break-all; */
 }
 
@@ -21,14 +22,8 @@
   height: 100%;
 }
 
-#fire {
-  background-color: red;
-}
+#fire { background-color: red;}
 
-#water {
-  background-color: blue;
-}
+#water { background-color: blue;}
 
-#earth {
-  background-color: green;
-}
+#earth { background-color: green;}
