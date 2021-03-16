@@ -5,8 +5,8 @@
 }
 
 body {
-  background-color: rgba(95, 158, 160, 0.2);
-  font-family: 'Noto Sans', sans-serif;
+  background-color: rgba(95 , 158 , 160 , 0.2);
+  font-family: Noto Sans, sans-serif;
 }
 
 #meme-image-container {
@@ -32,6 +32,6 @@ body {
 p {
   color: white;
   font-size: 30px;
-  box-shadow: 5px 5px 5px black;
+  text-shadow: 5px 5px 5px black;
   font-weight: 700;
 }
