@@ -1,13 +1,11 @@
-document.getElementById('img-input').onchange = function() {
-  let imgOutput = document.getElementById('meme-image');
+const imgOutput = document.getElementById('meme-image');
+document.getElementById('meme-insert').onchange = function () {
   imgOutput.src = URL.createObjectURL(this.files[0]);
-  imgOutput.onload = function() {
-    URL.revokeObjectURL(imgOutput.src)
-  }
+  imgOutput.onload = function () {
+    URL.revokeObjectURL(imgOutput.src);
+  };
 };
-
-let textInput = document.getElementById('text-input');
-
-textInput.onchange = function() {
+const textInput = document.getElementById('text-input');
+textInput.onchange = function () {
   document.getElementById('meme-text').innerText = textInput.value;
 };
