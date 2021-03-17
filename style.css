@@ -2,8 +2,7 @@
   border: rgb(39 , 226 , 148) solid 2px;
   background-color: white;
   width: 500px;
-  height: 400px;
-  display: flex;
+  height: 400px;  
   flex-wrap: wrap;
   overflow-wrap: break-word;
 }
@@ -13,12 +12,8 @@
   height: 400px;
 }
 
-#meme-text {   
-  width: 500px;
-  flex-wrap: wrap;
-  overflow-wrap: break-word;  
-  position: absolute;
-  top: 250px;
+#meme-text {     
+  position: absolute;  
   font-size: 30px;
   color: white;
   text-shadow: 5px 5px 5px black;
