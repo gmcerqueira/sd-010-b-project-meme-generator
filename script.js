@@ -46,3 +46,29 @@ function changeBorder() {
 }
 
 changeBorder();
+
+const meme1 = document.getElementById('meme-1');
+const meme2 = document.getElementById('meme-2');
+const meme3 = document.getElementById('meme-3');
+const meme4 = document.getElementById('meme-4');
+const imageContainer = document.getElementById('meme-image');
+
+meme1.addEventListener('click', () => {
+  const imagem = meme1.src;
+  imageContainer.src = imagem;
+});
+
+meme2.addEventListener('click', () => {
+  const imagem = meme2.src;
+  imageContainer.src = imagem;
+});
+
+meme3.addEventListener('click', () => {
+  const imagem = meme3.src;
+  imageContainer.src = imagem;
+});
+
+meme4.addEventListener('click', () => {
+  const imagem = meme4.src;
+  imageContainer.src = imagem;
+});

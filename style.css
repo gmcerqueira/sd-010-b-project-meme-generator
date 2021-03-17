@@ -12,21 +12,27 @@ body {
 #meme-image-container {
   border: 1px solid black;
   background-color: white;
-  width: 50%;
+  width: 40%;
   height: 50%;
   position: relative;
 }
 
 #meme-image {
   width: 100%;
-  height: 100%;
+  height: 400px;
+  object-fit: cover;
 }
 
 #meme-text {
   position: absolute;
   z-index: 1;
   bottom: 10px;
-  left: 20%;
+  left: 10%;
+}
+
+p:nth-of-type( 1 ) {
+  margin-top: 10px;
+  font-size: 20px;
 }
 
 #meme-image-container p {
@@ -34,11 +40,6 @@ body {
   font-size: 30px;
   text-shadow: 5px 5px 5px black;
   font-weight: 700;
-}
-
-p:nth-of-type(1) {
-  margin-top: 10px;
-  font-size: 20px;
 }
 
 button {
@@ -50,16 +51,24 @@ button {
 }
 
 #fire {
-  /* border: 3px dashed red; */
   background-color: red;
 }
 
 #water {
-  /* border: 5px double blue; */
   background-color: blue;
 }
 
 #earth {
-  /* border: 6px groove green; */
   background-color: green;
+}
+
+.memes-pre-definidos {
+  display: flex;
+  flex-direction: row;
+}
+
+.memes-pre-definidos img {
+  width: 150px;
+  height: 120px;
+  margin-right: 20px;
 }
