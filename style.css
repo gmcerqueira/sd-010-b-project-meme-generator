@@ -5,15 +5,18 @@ h1{
 #meme-image-container{
     border: 1px solid  black;
    background-color: white;
-    width: 50%;
+    width: 600px;
     height: 500px;/*tem casos que é bom usar height. Esse caso é um deles. Então sempre fique atento a isso. */
     position: relative;
-    background-image: url("130765456_411743316616043_3138906714265813586_n.jpg");
+    background-image: url();
     background-size: cover;
     background-position: center
+
 }
 
-
+#meme-image{
+    
+}
 #meme-text{
     margin-top: 200px;
     font-size: 30px;
@@ -24,4 +27,9 @@ h1{
     margin-left: 120px;
 
     text-shadow:5px 5px 5px black;
+}
+button{
+    font-size: 20px;
+    margin: 15px;
+    padding: 10px;
 }

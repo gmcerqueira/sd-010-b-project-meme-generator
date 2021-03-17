@@ -14,3 +14,30 @@ let fileInput=document.getElementById('meme-insert')
    
 }
 fileInput.addEventListener('input',uploadImage)
+// os 3 botões coloridos
+let fireButton=document.getElementById('fire')
+let waterButton=document.getElementById('water')
+let earthButton=document.getElementById('earth')
+
+
+function red(){
+    var image = document.getElementById('meme-image-container');
+    image.style.borderColor='red'
+    image.style.borderWidth= '5px'
+}
+fireButton.addEventListener('click',red)
+
+function blue(){
+    var image = document.getElementById('meme-image-container');
+    image.style.borderColor='blue'
+    image.style.borderWidth= '5px'
+}
+waterButton.addEventListener('click',blue)
+
+function green(){
+    var image = document.getElementById('meme-image-container');
+    image.style.borderColor='green'
+    image.style.borderWidth= '5px'
+}
+earthButton.addEventListener('click',green)
+
