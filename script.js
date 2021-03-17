@@ -24,3 +24,25 @@ inputId.addEventListener('change', () => {
   // readAsDataURL - usado para ler o conteúdo do 'file'
   reader.readAsDataURL(inputId.files[0]);
 });
+
+function changeBorder() {
+  const fireButton = document.getElementById('fire');
+  const waterButton = document.getElementById('water');
+  const earthButton = document.getElementById('earth');
+  const memeContainer = document.getElementById('meme-image-container');
+
+  fireButton.addEventListener('click', () => {
+    memeContainer.style.border = 'none';
+    memeContainer.style.border = '3px dashed red';
+  });
+  waterButton.addEventListener('click', () => {
+    memeContainer.style.border = 'none';
+    memeContainer.style.border = '5px double blue';
+  });
+  earthButton.addEventListener('click', () => {
+    memeContainer.style.border = 'none';
+    memeContainer.style.border = '6px groove green';
+  });
+}
+
+changeBorder();
