@@ -13,10 +13,10 @@
   </header>
   <div id="btn-config">
     <input type="text" id="text-input" placeholder="Texto do meme..." maxlength="60">
-    <input type="file" name="" id="meme-insert">
+    <input type="file" name="" id="meme-insert" onchange="document.getElementById('meme-image').src = window.URL.createObjectURL(this.files[0])">
   </div>  
   <div id="meme-image-container">
-      <img id="img" src="" alt="Imagem do meme">      
+      <img id="meme-image" src="" alt="Imagem do meme">      
       <p id="meme-text"></p>    
   </div>
   <script src="script.js"></script>

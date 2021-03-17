@@ -12,8 +12,11 @@
   height: 400px;
 }
 
-#meme-text {     
-  position: absolute;  
+#meme-text {
+  text-align: center;  
+  width: 490px;   
+  position: absolute;
+  top: 370px;
   font-size: 30px;
   color: white;
   text-shadow: 5px 5px 5px black;
