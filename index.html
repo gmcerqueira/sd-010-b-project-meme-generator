@@ -11,19 +11,27 @@
     <header>
         <h1>Meme Generator</h1>
     </header>
-        <label id="text-input" for="">Texto: </label>
-        <input id="text-input" type="text">
-        <label for="">Foto: </label>
-        <input type="file">
-        <div id="meme-image-container">
-            Resultado Foto
-            <p id="meme-text">Resultado texto</p>
+    <section>
+        <div>
+            <label for="texto">Texto: </label>
+            <input id="text-input" type="text" name="texto" placeholder="Insira a frase">
         </div>
+        <div>
+            <label for="foto">Foto: </label>
+            <input id="meme-image" type="file" name="foto">
+        </div>
+        <div id="meme-image-container">
+            <img src="" alt="" id="meme-image">
+            <p id="meme-text"></p>
+        </div>
+    </section>
     <article>
         <p>Estilos customizados:</p>
         <button>Fire</button>
         <button>Water</button>
         <button>Earth</button>
     </article>
+    <footer>Trybe / Projeto-03 [Diego-Serafim]-meme-generator-project, iniciado em 16/03 - finalizado em</footer>
+    <script src="script.js"></script>
 </body>
 </html>
