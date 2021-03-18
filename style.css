@@ -10,7 +10,6 @@
 #meme-image {  
   width: 500px;
   height: 400px;
-  
 }
 
 #meme-text {
@@ -23,16 +22,23 @@
   text-shadow: 5px 5px 5px black;
 }
 
+#borderBtn-container {
+  margin-top: 15px;
+}
+
 #fire {
   background-color: red;
+  border: dashed 3px red;
 }
 
 #water {
   background-color: blue;
+  border: double 5px blue;
 }
 
 #earth {
   background-color: green;
+  border: groove 6px green;
 }
 
 .default {
@@ -50,9 +56,3 @@
 .earth-style {
   border: 6px groove green;
 }
-
-#imgs img {
-  border: rgb(127 , 37 , 155) solid 2px;
-  width: 100px;
-}
-
