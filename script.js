@@ -12,7 +12,7 @@ const getInputText = () => {
 
 const writeTextInput = () => {
   textInput.addEventListener('keyup', () => {
-		getInputText();
+	getInputText();
 })
 }
 
