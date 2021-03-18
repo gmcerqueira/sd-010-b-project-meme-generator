@@ -50,3 +50,18 @@ const btnGreen = () => {
 }
 btnGreen();
 
+// 7 - Tenha um conjunto de quatro imagens pré prontas
+// de memes famosos para o usuário escolher.
+// Mostre miniaturas das imagens e, mediante clique do usuário,
+// essa imagem deve aparecer dentro da moldura do elemento de container.
+// set Ready Memes
+const containerImg = document.querySelector('#meme-image');
+const rdyMemes = document.querySelector('.ready-memes');
+
+const ready = () => {
+  rdyMemes.addEventListener('click',function(event){
+   let path = event.target.src;
+   containerImg.src = path;
+  })
+}
+ready();
