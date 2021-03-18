@@ -2,6 +2,8 @@ const textInput = document.querySelector('#text-input');
 const textWriter = document.querySelector('#meme-text');
 const borderBtns = document.querySelector('#borderBtn-container');
 const memeImgContainer = document.querySelector('#meme-image-container');
+const readyMemesContairner = document.querySelector('#ready-memes');
+const memeImage = document.querySelector('#meme-image');
 
 const getInputText = () => {
  let text = textInput.value; 
@@ -24,7 +26,15 @@ const ChangeBorder = () => {
 	})
 }
 
+const readyMemes = () => {
+	readyMemesContairner.addEventListener('click' , (event) => {
+		let path = event.target.src;
+		memeImage.src = path;		
+	})
+}
+
 window.onload = () => {
 	writeTextInput();
 	ChangeBorder();
+	readyMemes();
 }

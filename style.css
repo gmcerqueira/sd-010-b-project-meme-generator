@@ -41,18 +41,16 @@
   border: groove 6px green;
 }
 
-.default {
-  border: 1px solid;
+#label {
+  margin-top: 30px;
 }
 
-.fire-style {
-  border: 3px dashed red;
+#ready-memes {
+  margin-top: 10px;
 }
 
-.water-style {
-  border: 5px double blue;
-}
-
-.earth-style {
-  border: 6px groove green;
+.meme-1 {
+  width: 120px;
+  height: 80px;
+  border: solid black 1px;
 }
