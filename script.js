@@ -6,14 +6,14 @@ const readyMemesContairner = document.querySelector('#ready-memes');
 const memeImage = document.querySelector('#meme-image');
 
 const getInputText = () => {
- let text = textInput.value; 
- textWriter.innerHTML = text;
-}
+  const text = textInput.value;
+  textWriter.innerHTML = text;
+};
 
 const writeTextInput = () => {
-	textInput.addEventListener('keyup' , () => {
-		getInputText();
-	})
+  textInput.addEventListener('keyup' ,() => {
+	   getInputText();
+})
 }
 
 const ChangeBorder = () => {
