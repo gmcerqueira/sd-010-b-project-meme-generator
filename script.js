@@ -12,29 +12,29 @@ const getInputText = () => {
 
 const writeTextInput = () => {
   textInput.addEventListener('keyup', () => {
-	getInputText();
-})
-}
+    getInputText();
+  });
+};
 
 const ChangeBorder = () => {
-	borderBtns.addEventListener('click' , (event) => {
-		let teste = event.target.className;
-		if (event.target.classList.contains('btn')) {
-			teste = teste.replace(/btn/gi , '');
-		  memeImgContainer.style.border = teste;		  
-		}
-	})
-}
+  borderBtns.addEventListener('click', (event) => {
+    let teste = event.target.className;
+    if (event.target.classList.contains('btn')) {
+      teste = teste.replace(/btn/gi, '');
+      memeImgContainer.style.border = teste;
+    }
+  });
+};
 
 const readyMemes = () => {
-	readyMemesContairner.addEventListener('click' , (event) => {
-		let path = event.target.src;
-		memeImage.src = path;		
-	})
-}
+  readyMemesContairner.addEventListener('click', (event) => {
+    const path = event.target.src;
+    memeImage.src = path;
+  });
+};
 
 window.onload = () => {
-	writeTextInput();
-	ChangeBorder();
-	readyMemes();
-}
+  writeTextInput();
+  ChangeBorder();
+  readyMemes();
+};
