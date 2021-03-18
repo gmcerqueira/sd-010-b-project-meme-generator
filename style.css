@@ -1,8 +1,8 @@
 #meme-image-container {
-  border: solid 1px black; 
+  border: solid 1px black;
   background-color: white;
   width: 500px;
-  height: 400px;  
+  height: 400px;
   flex-wrap: wrap;
   overflow-wrap: break-word;
 }
@@ -13,8 +13,8 @@
 }
 
 #meme-text {
-  text-align: center;  
-  width: 490px;   
+  text-align: center;
+  width: 490px;
   position: absolute;
   top: 370px;
   font-size: 30px;
